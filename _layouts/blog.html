@@ -1,0 +1,95 @@
+---
+layout: default
+---
+
+<section class="blog-section">
+  <div class="blog-container">
+    {% for post in site.posts %}
+      <article class="blog-unit">
+        <h2 class="blog-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p class="blog-date">
+          {% assign d = post.date | date: "%-d" %}
+          {{ post.date | date: "%B" }}
+          {% case d %}
+            {% when '1', '21', '31' %}{{ d }}st
+            {% when '2', '22' %}{{ d }}nd
+            {% when '3', '23' %}{{ d }}rd
+            {% else %}{{ d }}th
+          {% endcase %},
+          {{ post.date | date: "%Y" }}
+        </p>
+        <p class="blog-excerpt">{{ post.excerpt }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<style>
+  .blog-section {
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+  }
+
+  .blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .blog-unit {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .blog-unit:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .blog-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #333333;
+  }
+
+  .blog-title a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+
+  .blog-title a:hover {
+    color: #007acc;
+  }
+
+  .blog-date {
+    font-size: 0.875rem;
+    color: #999999;
+    margin-bottom: 1rem;
+  }
+
+  .blog-excerpt {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666666;
+  }
+
+  @media (max-width: 600px) {
+    .blog-unit {
+      padding: 1rem;
+    }
+
+    .blog-title {
+      font-size: 1.5rem;
+    }
+
+    .blog-excerpt {
+      font-size: 0.875rem;
+    }
+  }
+</style>
