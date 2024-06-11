@@ -1,19 +1,18 @@
 # Build settings
-
 port: 4000
-markdown:  kramdown
+markdown: kramdown
 permalink: /:title
-plugins:   [
-  jekyll-feed,
-  jekyll-seo-tag,
-  jekyll-paginate,
-  jekyll-sitemap
-]
+plugins: 
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-include-cache
 
 # Customise atom feed settings
 title: "Ronald Onyango"
 author: "Ronald Onyango"
-description:
+description: >
   I am a strategic and data-driven Product Manager with over three years 
   of experience in product management, data analytics, and UX research 
   within social enterprise and digital-based sector businesses. My expertise 
@@ -22,14 +21,12 @@ description:
   that enhance user experiences and business growth.
 
 # Customise sitemap settings
-
-sitemap: {
+sitemap:
   path: sitemap.xml
-}
 
-# Customise redirect_from settings
+# Customise include cache settings
+include_cache_buster:
+  collections: true
 
-redirect_from: {
-  path: _redirects
-}
-
+# Customise permalink settings
+permalink: pretty

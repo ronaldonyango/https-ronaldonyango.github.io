@@ -11,24 +11,8 @@ menu:
 # Projects Section
 
 projects:
-  - name: 'Project One'
-    url: 'suicide-rates-analysis'
-    categories: ['Data Analysis', 'Statistics']
-    # Add more projects here
-    # - name: 'Project Two'
-    #   url: 'project-two-url'
-    #   categories: ['Category1', 'Category2']
+- {name: 'Suicide Rates Analysis',   url: 'suicide-rates-analysis'}
 
-#-------------------------------
-# Blog Section
-
-blog:
-  categories:
-    - name: 'Data Analysis'
-      url: 'category/data-analysis'
-    - name: 'Product Management'
-      url: 'category/product-management'
-  per_page: 5  # Number of posts per page
 
 #-------------------------------
 # Contact Section
