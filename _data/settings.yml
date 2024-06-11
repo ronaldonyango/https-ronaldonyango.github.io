@@ -2,44 +2,79 @@
 # General Site Settings
 
 menu:
-- {name: 'Projects', url: ''}
-- {name: 'Blog',     url: 'blog'}
-- {name: 'About',    url: 'about'}
-- {name: 'Contact',  url: 'contact'}
+  - {name: 'Projects', url: ''}
+  - {name: 'Blog',     url: 'blog'}
+  - {name: 'About',    url: 'about'}
+  - {name: 'Contact',  url: 'contact'}
 
 #-------------------------------
 # Projects Section
 
 projects:
-- {name: 'Project One',   url: 'suicide-rates-analysis'}
+  - name: 'Project One'
+    url: 'suicide-rates-analysis'
+    categories: ['Data Analysis', 'Statistics']
+    # Add more projects here
+    # - name: 'Project Two'
+    #   url: 'project-two-url'
+    #   categories: ['Category1', 'Category2']
+
+#-------------------------------
+# Blog Section
+
+blog:
+  categories:
+    - name: 'Data Analysis'
+      url: 'category/data-analysis'
+    - name: 'Product Management'
+      url: 'category/product-management'
+  per_page: 5  # Number of posts per page
 
 #-------------------------------
 # Contact Section
 
 social:
-- {icon: 'twitter',   link: 'https://twitter.com/ronaldoyw'}
-- {icon: 'instagram', link: 'https://instagram.com/ronaldoyw_'}
-- {icon: 'github',    link: 'https://github.com/ronaldonyango'}
-- {icon: 'linkedin',  link: 'https://linkedin.com/in/ronaldonyango'}
-- {icon: 'envelope',  link: 'mailto:ronaldoyw@gmail.com'}
+  - {icon: 'twitter',   link: 'https://twitter.com/ronaldoyw'}
+  - {icon: 'instagram', link: 'https://instagram.com/ronaldoyw_'}
+  - {icon: 'github',    link: 'https://github.com/ronaldonyango'}
+  - {icon: 'linkedin',  link: 'https://linkedin.com/in/ronaldonyango'}
+  - {icon: 'envelope',  link: 'mailto:ronaldoyw@gmail.com'}
 
-# social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
+# social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' / 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
+
+#-------------------------------
+# SEO Section
 
 seo:
-  description: 'I am a strategic and data-driven Product Manager with over three years 
-  of experience in product management, data analytics, and UX research within social 
-  enterprise and digital-based sector businesses. My expertise lies in leveraging 
-  data-driven insights, user research, and cross-functional collaboration to drive 
-  impactful product strategies and innovative solutions that enhance user experiences 
-  and business growth.'
+  title: 'Ronald Onyango - Product Manager and Data Analyst'
+  description: >
+    I am a strategic and data-driven Product Manager with over three years 
+    of experience in product management, data analytics, and UX research 
+    within social enterprise and digital-based sector businesses. My expertise 
+    lies in leveraging data-driven insights, user research, and cross-functional 
+    collaboration to drive impactful product strategies and innovative solutions 
+    that enhance user experiences and business growth.
+  keywords: 'product manager, data analytics, UX research, product strategy, digital business'
 
 #-------------------------------
 # Google Analytics Section
 
-# The measurement ID for Google Analytics 4
 google-analytics-id: 'G-VKHGE8W8W3'
 
+#-------------------------------
 # Google Tag Manager Section
 
-# The container ID for Google Tag Manager
 google-tag-manager-id: 'GTM-5NLZQQK9'
+
+#-------------------------------
+# Footer Section
+
+footer:
+  text: '© 2024 Ronald Onyango. All rights reserved.'
+  additional_links:
+    - {name: 'Privacy Policy', url: 'privacy-policy'}
+    - {name: 'Terms of Service', url: 'terms-of-service'}
+  # Add more links as needed
+
+#-------------------------------
+# Custom Variables

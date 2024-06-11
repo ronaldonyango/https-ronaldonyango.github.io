@@ -6,6 +6,13 @@
           <img src="{{ site.github.url }}/assets/img/projects/{{ project.url }}/thumbnail.png" alt="{{ project.name }}" class="project-thumbnail">
           <div class="project-overlay">
             <strong>{{ project.name }} <i class="fa fa-arrow-right" aria-hidden="true"></i></strong>
+            <p class="project-categories">
+              Categories:
+              {% for category in project.categories %}
+                <a href="{{ site.baseurl }}{{ category.url }}">{{ category.name }}</a>
+                {% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+            </p>
           </div>
         </div>
       </a>
@@ -46,6 +53,18 @@
   }
   .project-overlay i {
     margin-left: 5px;
+  }
+  .project-categories {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .project-categories a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .project-categories a:hover {
+    color: #007acc;
   }
 </style>
 

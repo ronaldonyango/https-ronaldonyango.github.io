@@ -7,6 +7,6 @@ plugins:   [jekyll-sitemap, jekyll-feed,  jekyll-seo-tag]
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 
-title:		   "Ronald Onyango Porfolio"
+title:		   "Ronald Onyango"
 description: "Explore my portfolio projects on data science and data analytics"
 author:      "Ronald Onyango"
