@@ -67,15 +67,5 @@ google-analytics-id: 'G-VKHGE8W8W3'
 google-tag-manager-id: 'GTM-5NLZQQK9'
 
 #-------------------------------
-# Footer Section
-
-footer:
-  text: '© 2024 Ronald Onyango. All rights reserved.'
-  additional_links:
-    - {name: 'Privacy Policy', url: 'privacy-policy'}
-    - {name: 'Terms of Service', url: 'terms-of-service'}
-  # Add more links as needed
-
-#-------------------------------
 # Custom Variables
 
